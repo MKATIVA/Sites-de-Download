@@ -280,7 +280,7 @@ input::placeholder {
 }
 
 .teams h2 {
-    color: #00ff40;
+    color: var(--Cor-Laranja);
     text-transform: uppercase;
 }
 
