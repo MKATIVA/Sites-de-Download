@@ -500,27 +500,30 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.botaoDownload a {
-    padding: 8px 30px;
-    background-color: #5432d1;
-}
-
-.botaoDownload a:hover {
-    background-color: var(--Cor-Laranja);
+    position: relative;
+    width: 100%;
+    height: 29px;
+    margin: auto;
 }
 
 .botaoDownload button {
+    background-color: #5432d1;
+    border-radius: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     border: none;
-    background-color: transparent;
     cursor: pointer;
-    color: #fff;
 }
+
+.botaoDownload button:hover {
+    background-color: var(--Cor-Laranja);
+}
+
 
 footer {
     background-color: #230491;
