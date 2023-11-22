@@ -858,6 +858,16 @@ footer a:hover {
         font-size: 12px;
     }
 
+    .teams .carousel .card .box h3 {
+        position: absolute;
+        color: #fff;
+        background-color: var(--Cor-Laranja);
+        width: 88%;
+        bottom: 0;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
     .texto,
     .icone {
         font-size: 18px;
