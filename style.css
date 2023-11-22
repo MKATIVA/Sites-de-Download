@@ -499,7 +499,7 @@ input::placeholder {
     width: 100%;
     height: 100%;
     transition: 0.4s;
-    /* filter: grayscale(90%); */
+    filter: grayscale(50%);
 }
 
 .artista-todos:hover h2 {
@@ -508,7 +508,7 @@ input::placeholder {
 
 .artista-todos:hover img {
     transform: translateY(-7px);
-    filter: grayscale(90%);
+    filter: grayscale(0%);
 }
 
 .artista-todos p {
