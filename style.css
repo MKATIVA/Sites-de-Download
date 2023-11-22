@@ -333,6 +333,7 @@ input::placeholder {
 
 .teams .carousel .card:hover .box {
     transform: scale(1.05);
+    filter: grayscale(90%);
 }
 
 .teams .carousel .card img {
