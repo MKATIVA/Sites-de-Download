@@ -318,7 +318,7 @@ input::placeholder {
 .teams .carousel .card .box h3 {
     position: absolute;
     color: #fff;
-    background-color: #0074D9;
+    background-color: var(--Cor-Laranja);
     width: 94%;
     bottom: 0;
     text-transform: uppercase;
@@ -498,7 +498,7 @@ input::placeholder {
     width: 100%;
     height: 100%;
     transition: 0.4s;
-    filter: grayscale(90%);
+    /* filter: grayscale(90%); */
 }
 
 .artista-todos:hover h2 {
@@ -507,7 +507,7 @@ input::placeholder {
 
 .artista-todos:hover img {
     transform: translateY(-7px);
-    filter: grayscale(0%);
+    filter: grayscale(90%);
 }
 
 .artista-todos p {
