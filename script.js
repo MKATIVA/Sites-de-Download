@@ -130,7 +130,7 @@ if (logoImage) {
 ///======================== SEARCHBAR =====================================
 
 var searchbar = document.getElementById("searchbar");
-var prefix = "Digite o nome: ";
+var prefix = "Digite Nome: ";
 var placeholderLines = ["ARTISTA", "BANDA", "ÁLBUM", "ESTILO"];
 var currentIndex = 0;
 var animationSpeed = 2500; // Ajuste a velocidade da animação em milissegundos
