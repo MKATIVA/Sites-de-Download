@@ -203,6 +203,7 @@ input::placeholder {
     color: rgb(197, 195, 195);
 }
 
+
 .meu-input {
     position: relative;
     font-size: 16px;
@@ -214,6 +215,16 @@ input::placeholder {
     border: 2px solid rgba(83, 192, 243, 0.2);
     color: #fff;
     margin: 25px;
+    white-space: nowrap;
+    /* Para garantir que o texto não quebre em várias linhas */
+    overflow: hidden;
+    /* Para esconder o texto que ultrapassa a largura do contêiner */
+}
+
+
+.search-results-container {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    margin: 20px;
 }
 
 #apresentacao {
@@ -290,10 +301,10 @@ input::placeholder {
 }
 
 .teams .carousel .card {
-    border-radius: 6px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .teams .carousel .card .box {
@@ -302,7 +313,16 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+}
 
+.teams .carousel .card .box h3 {
+    position: absolute;
+    color: #fff;
+    background-color: #0074D9;
+    width: 94%;
+    bottom: 0;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 .teams .carousel {
@@ -319,7 +339,6 @@ input::placeholder {
     height: 150px;
     width: 150px;
     object-fit: cover;
-    border-radius: 15px;
     transition: all 0.3s ease;
     padding: 0 8px;
 }
@@ -698,6 +717,11 @@ footer a:hover {
 }
 
 @media screen and (max-width: 480px) {
+
+    .search-results-container {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+    }
+
     .tela-cheia {
         display: none;
     }
@@ -836,6 +860,8 @@ footer a:hover {
         background: rgba(255, 255, 255, 0.3);
         border: 2px solid rgba(83, 192, 243, 0.2);
         color: #fff;
+        white-space: normal;
+        overflow: visible;
     }
 
     #todosArtistas h1 {
@@ -912,4 +938,21 @@ footer a:hover {
         max-width: 100%;
     }
 
+}
+
+
+/* Ajuste para telas médias (768px ou mais, até 1199px) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .search-results-container {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        margin: 20px;
+    }
+}
+
+/* Ajuste para telas menores (480px ou mais, até 767px) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .search-results-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 20px;
+    }
 }

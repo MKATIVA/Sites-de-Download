@@ -1,5 +1,3 @@
-/** @format */
-
 // Crie uma nova tag <link> para o novo ícone
 var newLink = document.createElement("link");
 newLink.rel = "icon";
@@ -8,6 +6,8 @@ newLink.href = "img/logo/Sem título-2.webp"; // Use o mesmo caminho do seu HTML
 
 // Adicione a nova tag <link> ao cabeçalho do documento
 document.head.appendChild(newLink);
+
+///=================================================================
 
 // Botão ⬆️ de voltar
 
@@ -33,6 +33,8 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
+///=================================================================
+
 // Obter o botão pelo ID
 const fullscreenButton = document.getElementById("fullscreen-button");
 
@@ -47,6 +49,8 @@ function toggleFullscreen() {
 // Adicionar um ouvinte de evento de clique ao botão de tela cheia
 fullscreenButton.addEventListener("click", toggleFullscreen);
 
+///=================================================================
+
 // Adicionar um ouvinte de evento de rolagem à janela
 window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY;
@@ -58,6 +62,8 @@ window.addEventListener("scroll", () => {
     fullscreenButton.style.display = "none";
   }
 });
+
+///=================================================================
 
 //Pesquisa feita pelo Input
 
@@ -84,13 +90,12 @@ function search(event) {
 
   // Crie um contêiner grid para os elementos correspondentes à pesquisa
   const searchResultsContainer = document.createElement("div");
-  searchResultsContainer.style.display = "flex";
-  searchResultsContainer.style.gridTemplateColumns =
-    "repeat(auto-fit, minmax(150px, 1fr))"; // Defina o tamanho das colunas e permita que eles quebrem dinamicamente
+  searchResultsContainer.classList.add("search-results-container");
+  searchResultsContainer.style.display = "grid";
   searchResultsContainer.style.gap = "20px";
-  searchResultsContainer.style.alignItems = "center"; // Centralize verticalmente
-  searchResultsContainer.style.textAlign = "center"; // Centralize verticalmente
-  searchResultsContainer.style.justifyItems = "center"; // Centralize horizontalmente
+  searchResultsContainer.style.alignItems = "center";
+  searchResultsContainer.style.textAlign = "center";
+  searchResultsContainer.style.justifyItems = "center";
 
   // Adicione os elementos correspondentes à pesquisa no contêiner grid
   matchingItems.forEach((item) => {
@@ -110,6 +115,9 @@ function search(event) {
   }
 }
 
+
+///=================================================================
+
 //CLICANDO NA LOGOMARCA = ATUALIZARÁ A PÁGINA
 const logoImage = document.getElementById("logoImage");
 
@@ -119,11 +127,24 @@ if (logoImage) {
   });
 }
 
-// Seleciona o elemento de entrada pelo ID
-var searchbar = document.getElementById("searchbar");
+///======================== SEARCHBAR =====================================
 
-// Define o novo valor para o atributo placeholder
-searchbar.placeholder = "Digite o Artista | Banda | Álbum";
+var searchbar = document.getElementById("searchbar");
+var prefix = "Digite o nome: ";
+var placeholderLines = ["ARTISTA", "BANDA", "ÁLBUM", "ESTILO"];
+var currentIndex = 0;
+var animationSpeed = 2500; // Ajuste a velocidade da animação em milissegundos
+
+function animatePlaceholder() {
+  searchbar.placeholder = prefix + placeholderLines[currentIndex];
+  currentIndex = (currentIndex + 1) % placeholderLines.length;
+}
+
+// Iniciar a animação
+setInterval(animatePlaceholder, animationSpeed);
+
+
+///=============================================================
 
 // CÓDIGO PARA EXECUTAR O DOWNLOAD DO APLICATIVO //
 document.getElementById("downloadLink").addEventListener("click", function (e) {
@@ -140,30 +161,32 @@ document.getElementById("downloadLink").addEventListener("click", function (e) {
   document.body.removeChild(a);
 });
 
- $(document).ready(function () {
-   $(".carousel").slick({
-     slidesToShow: 8,
-     dots: false,
-     arrows: true,
-     swipeToSlide: true,
-     autoplay: true, // Adiciona a opção autoplay
-     autoplaySpeed: 2000, 
-     responsive: [
-       {
-         breakpoint: 768,
-         settings: {
-           slidesToShow: 3,
-         },
-       },
-       {
-         breakpoint: 480,
-         settings: {
-           slidesToShow: 2,
-         },
-       },
-     ],
-   });
- });
+// slide
+
+$(document).ready(function () {
+  $(".carousel").slick({
+    slidesToShow: 8,
+    dots: false,
+    arrows: true,
+    swipeToSlide: true,
+    autoplay: true, // Adiciona a opção autoplay
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
+});
 
 //OPÇÃO DE AVANÇAR AS PÁGINA ENTRE OS CANTORES
 var letras = [
