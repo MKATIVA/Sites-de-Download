@@ -718,6 +718,9 @@ footer a:hover {
 }
 
 @media screen and (max-width: 480px) {
+    nav ul li {
+        padding: 5px 1px;
+    }
 
     .search-results-container {
         grid-template-columns: repeat(2, minmax(120px, 1fr));
@@ -834,6 +837,12 @@ footer a:hover {
     }
 }
 
+@media screen and (max-width: 360px) {
+    nav ul li {
+        padding: 5px 1px;
+    }
+}
+
 @media (max-width: 768px) and (min-width: 481px) {
     nav ul li {
         padding: 5px 7px;
@@ -941,8 +950,6 @@ footer a:hover {
 
 }
 
-
-/* Ajuste para telas médias (768px ou mais, até 1199px) */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .search-results-container {
         grid-template-columns: repeat(5, minmax(0, 1fr));
