@@ -115,7 +115,6 @@ function search(event) {
   }
 }
 
-
 ///=================================================================
 
 //CLICANDO NA LOGOMARCA = ATUALIZARÁ A PÁGINA
@@ -142,7 +141,6 @@ function animatePlaceholder() {
 
 // Iniciar a animação
 setInterval(animatePlaceholder, animationSpeed);
-
 
 ///=============================================================
 
