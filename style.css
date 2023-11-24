@@ -130,11 +130,12 @@ body {
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: #23135d;
+    background-color: #2700b6;
     z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 nav ul {
@@ -145,11 +146,8 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
+    margin: 0 5px;
+    position: relative;
 }
 
 nav ul li a {
@@ -160,18 +158,6 @@ nav ul li a {
     font-size: 12px;
 }
 
-nav ul li .texto {
-    opacity: 1;
-    transition: opacity 0.4s;
-}
-
-nav ul li:hover .icone,
-nav ul li:hover .texto {
-    opacity: 1;
-    color: var(--Cor-Laranja);
-}
-
-/* Estilos adicionais conforme necessário para ícones e texto */
 .menu-link {
     display: flex;
     align-items: center;
@@ -179,12 +165,6 @@ nav ul li:hover .texto {
 
 .menu-link .icone {
     margin-right: 5px;
-}
-
-
-#apresentacao {
-    margin-top: 20px;
-
 }
 
 .texto,
@@ -203,7 +183,6 @@ input::placeholder {
     color: rgb(197, 195, 195);
 }
 
-
 .meu-input {
     position: relative;
     font-size: 16px;
@@ -221,14 +200,9 @@ input::placeholder {
     /* Para esconder o texto que ultrapassa a largura do contêiner */
 }
 
-
 .search-results-container {
     grid-template-columns: repeat(7, minmax(0, 1fr));
     margin: 20px;
-}
-
-#apresentacao {
-    margin-top: 50px;
 }
 
 .apresentacao {
@@ -300,11 +274,12 @@ input::placeholder {
     color: #fff;
 }
 
-.teams .carousel .card {
+.teams .carousel .card {/* Distanciamento */
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
     position: relative;
+    padding: 0 2px;
 }
 
 .teams .carousel .card .box {
@@ -319,7 +294,7 @@ input::placeholder {
     position: absolute;
     color: #fff;
     background-color: var(--Cor-Laranja);
-    width: 94%;
+    width: 98%;
     bottom: 0;
     text-transform: uppercase;
     font-size: 13px;
@@ -347,8 +322,6 @@ input::placeholder {
 .teams .carousel .card:hover img {
     border-color: #fff;
 }
-
-
 
 .container {
     display: grid;
@@ -885,13 +858,8 @@ footer a:hover {
     }
 
     .teams .carousel .card .box h3 {
-        position: absolute;
-        color: #fff;
-        background-color: var(--Cor-Laranja);
-        width: 70%;
-        bottom: 0;
-        text-transform: uppercase;
-        font-size: 13px;
+        width: 78%;
+        padding: 0 1PX;
     }
 
     .icone {
