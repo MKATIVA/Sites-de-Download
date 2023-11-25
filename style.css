@@ -291,12 +291,13 @@ input::placeholder {
     bottom: 0;
     text-transform: uppercase;
     font-size: 13px;
+    z-index: 9999;
 }
 
 .teams .carousel {
     overflow: hidden;
     display: flex;
-    max-width: 100%;
+    max-width: 98%;
 }
 
 .teams .carousel .card {
@@ -312,6 +313,8 @@ input::placeholder {
 
 .teams .carousel .card:hover img {
     border-color: #fff;
+    transform: translateY(-5px);
+    filter: grayscale(90%);
 }
 
 #genero {
@@ -402,10 +405,6 @@ input::placeholder {
 
 .artista-todos:hover button {
     background-color: var(--Cor-Laranja);
-}
-
-#todosArtistas .container:hover> :not(:hover) {
-    filter: saturate(10%);
 }
 
 .artista-todos {
@@ -673,6 +672,11 @@ footer a:hover {
     align-items: center;
 }
 
+#botoes #botaoAvancar:hover,
+#botoes #botaoVoltar:hover {
+    background-color: #39a3ff;
+}
+
 #botoes #botaoAvancar {
     margin: 5px;
     border: none;
@@ -681,21 +685,41 @@ footer a:hover {
     background-color: #FF6800;
     color: #fff;
     border-radius: 25px;
+    transition: 0.2s;
+    position: relative;
+}
+
+#botoes #botaoVoltar {
+    margin: 5px;
+    border: none;
+    padding: 5px 40px;
+    cursor: pointer;
+    background-color: var(--Cor-Lilas-2);
+    color: #fff;
+    border-radius: 25px;
     transition: 0.5s;
     position: relative;
 }
 
-#botaoAvancar i{
+#botaoVoltar i {
+    position: absolute;
+    font-size: 18px;
+    left: 20px;
+}
+
+#botaoAvancar i {
     position: absolute;
     font-size: 18px;
     animation: pulse .9s linear infinite;
     padding: 0 20px;
 }
+
 @keyframes pulse {
-    0%{
+    0% {
         transform: scale(1.02);
     }
-    100%{
+
+    100% {
         color: var(--Cor-Lilas-2);
     }
 }

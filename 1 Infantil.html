@@ -54,58 +54,318 @@
                 </ul>
             </nav>
         </div><!-- menu-topo -->
-    
+
     </header>
 
+    <section class="apresentacao" id="apresentacao">
+        <img src="img/capa.png" width="140px" class="logomarca" id="logoImage">
+        <!-------------Input de pesquisa--------->
+        <input id="searchbar" type="text" name="searchbar" class="meu-input" placeholder="" onkeyup="search()" />
+
+    </section><!-- APRESENTACAO -->
+
     <Section id="todosArtistas" class="searchResultsContainer">
-        <h1> Adore<strong>lle</strong></h1>
+        <h1> Músicas <strong>Infantil</strong></h1>
 
         <div class="recentes-grid" id="A">
             <div class="letra" style="display: none;">
                 <h3>letra <span>A</span></h3>
             </div>
+
             <div class="container">
 
-                <!-- 2010 -->
-                <div class="artista-todos" data-title="Adorelle - 2010 - Deixa Brilhar">
+                <div class="artista-todos" data-title="Rebeca Nemer - 2009 - Tudo de Bom Infantil infântil">
                     <div class="img-texto">
-                        <img class="artista-imagem" src="capas/Adorelle/Adorelle - 2010 - Deixa Brilhar.webp"
+                        <img class="artista-imagem" src="capas/Rebeca Nemer - 2009 - Tudo de Bom.webp"
                             alt="Capas-oficial">
-                        <h2>Deixa Brilhar</h2>
+                        <h2 style="">Rebeca <span>Nemer</span></h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ANO: 2009</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#"><button>Download <i class="fa-solid fa-download"></i></button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- 2001 -->
+                <div class="artista-todos" data-title="Crianças Diante do Trono - 2001 - Crianças Diante do Trono">
+                    <div class="img-texto">
+                        <img class="artista-imagem"
+                            src="capas/Crianças Diante do Trono - 2001 - Crianças Diante do Trono.webp"
+                            alt="Capas-oficial">
+                        <h2>Crianças Diante do Trono</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2001</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- 2003 -->
+                <div class="artista-todos" data-title="Crianças Diante do Trono - 2003 - Amigo de Deus">
+                    <div class="img-texto">
+                        <img class="artista-imagem" src="capas/Crianças Diante do Trono - 2003 - Amigo de Deus.webp"
+                            alt="Capas-oficial">
+                        <h2>Amigo de Deus</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2003</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- 2004 -->
+                <div class="artista-todos" data-title="Crianças Diante do Trono - 2004 - Quem é Jesus">
+                    <div class="img-texto">
+                        <img class="artista-imagem" src="capas/Crianças Diante do Trono - 2004 - Quem é Jesus.webp"
+                            alt="Capas-oficial">
+                        <h2>Quem é Jesus</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2004</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- 2006 -->
+                <div class="artista-todos" data-title="Crianças Diante do Trono - 2006 - A Arca de Noé">
+                    <div class="img-texto">
+                        <img class="artista-imagem" src="capas/Crianças Diante do Trono - 2006 - A Arca de Noé.webp"
+                            alt="Capas-oficial">
+                        <h2>A Arca de Noé</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2006</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- 2007 -->
+                <div class="artista-todos"
+                    data-title="Crianças Diante do Trono - 2007 - Samuel - O Menino Que Ouviu Deus">
+                    <div class="img-texto">
+                        <img class="artista-imagem"
+                            src="capas/Crianças Diante do Trono - 2007 - Samuel - O Menino Que Ouviu Deus.webp"
+                            alt="Capas-oficial">
+                        <h2>Samuel</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2007</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- 2008 -->
+                <div class="artista-todos"
+                    data-title="Crianças Diante do Trono - 2008 - Para Adorar ao Senhor (Ao Vivo)">
+                    <div class="img-texto">
+                        <img class="artista-imagem"
+                            src="capas/Crianças Diante do Trono - 2008 - Para Adorar ao Senhor (Ao Vivo).webp"
+                            alt="Capas-oficial">
+                        <h2>Para Adorar ao Senhor (Ao Vivo)</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2008</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- 2010 -->
+                <div class="artista-todos" data-title="Crianças Diante do Trono - 2010 - Amigos do Perdão">
+                    <div class="img-texto">
+                        <img class="artista-imagem" src="capas/Crianças Diante do Trono - 2010 - Amigos do Perdão.webp"
+                            alt="Capas-oficial">
+                        <h2>Amigos do Perdão</h2>
                     </div>
                     <div class="texto-botao">
                         <p>ano: 2010</p>
                     </div><!-- texto-botao -->
                     <div class="botaoDownload">
-                        <a href="https://seulink.net/Adorelle-2010" target="_blank"><button>Download</button></a>
+                        <a href="#" target="_blank"><button>Download</button></a>
                     </div>
                 </div><!-- artista-todos -->
 
                 <!-- 2012 -->
-                <div class="artista-todos" data-title="Adorelle - 2012 - Eternize-se">
+                <div class="artista-todos" data-title="Crianças Diante do Trono - 2012 - Davi">
                     <div class="img-texto">
-                        <img class="artista-imagem" src="capas/Adorelle/Adorelle - 2012 - Eternize-se.webp"
+                        <img class="artista-imagem" src="capas/Crianças Diante do Trono - 2012 - Davi.webp"
                             alt="Capas-oficial">
-                        <h2>Eternize-se</h2>
+                        <h2>Davi</h2>
                     </div>
                     <div class="texto-botao">
                         <p>ano: 2012</p>
                     </div><!-- texto-botao -->
                     <div class="botaoDownload">
-                        <a href="https://seulink.net/Adorelle-2012" target="_blank"><button>Download</button></a>
+                        <a href="#" target="_blank"><button>Download</button></a>
                     </div>
                 </div><!-- artista-todos -->
 
+                <!-- 2015 -->
+                <div class="artista-todos" data-title="Crianças Diante do Trono - 2015 - Renovo Kids">
+                    <div class="img-texto">
+                        <img class="artista-imagem" src="capas/Crianças Diante do Trono - 2015 - Renovo Kids.webp"
+                            alt="Capas-oficial">
+                        <h2>Renovo Kids</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2015</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- 2016 -->
+                <div class="artista-todos" data-title="Crianças Diante do Trono - 2016 - D.T Babies">
+                    <div class="img-texto">
+                        <img class="artista-imagem" src="capas/Crianças Diante do Trono - 2016 - D.T Babies.webp"
+                            alt="Capas-oficial">
+                        <h2>D.T Babies</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2016</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- 2004 -->
+                <div class="artista-todos" data-title="CRISTINA MEL - 2004 - Bom é ser criança">
+                    <div class="img-texto">
+                        <img class="artista-imagem" src="capas/CRISTINA MEL - 2004 - Bom é ser criança.webp"
+                            alt="Capas-oficial">
+                        <h2>Bom é ser criança</h2>
+                    </div>
+                    <div class="texto-botao">
+
+                        <p>ano: 2004</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="https://encurtalink.online/RISTINA_MEL_-_2004"
+                            target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- ==================================== -->
+                <div class="artista-todos" data-title="Cristina Mel - 2009 - Turminha Da Cristina Mel">
+                    <div class="img-texto">
+                        <img class="artista-imagem" src="capas/Cristina Mel - 2009 - Turminha Da Cristina Mel.webp"
+                            alt="Capas-oficial">
+                        <h2>Turminha Da Mel</h2>
+                    </div>
+                    <div class="texto-botao">
+
+                        <p>ano: 2009</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- ==================================== -->
+                <div class="artista-todos" data-title="Cristina Mel - 2010 - Clube da Cristina Mel">
+                    <div class="img-texto">
+                        <img class="artista-imagem" src="capas/Cristina Mel - 2010 - Clube da Cristina Mel 1.webp"
+                            alt="Capas-oficial">
+                        <h2>Clube da Mel 1</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2010</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- ==================================== -->
+                <div class="artista-todos" data-title="Cristina Mel - 2012 - Clube da Cristina Mel">
+                    <div class="img-texto">
+                        <img class="artista-imagem" src="capas/Cristina Mel - 2012 - Clube da Cristina Mel 2.webp"
+                            alt="Capas-oficial">
+                        <h2>Clube da Mel 2</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2012</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- ==================================== -->
+                <div class="artista-todos" data-title="Turminha da Cristina Mel - Fazendo a Diferença">
+                    <div class="img-texto">
+                        <img class="artista-imagem"
+                            src="capas/Cristina Mel - 2014 - Turminha da Cristina Mel - Fazendo a Diferença.webp"
+                            alt="Capas-oficial">
+                        <h2>Fazendo a Diferença</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2014</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- ==================================== -->
+                <div class="artista-todos"
+                    data-title="Cristina Mel - 2017 - Turminha da Cristina Mel_ Para Brincar e Aprender">
+                    <div class="img-texto">
+                        <img class="artista-imagem"
+                            src="capas/Cristina Mel - 2017 - Turminha da Cristina Mel_ Para Brincar e Aprender.webp"
+                            alt="Capas-oficial">
+                        <h2>Para Brincar e Aprender</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2017</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="#" target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+
+                <!-- ==================================== -->
+                <!-- 2019 -->
+                <div class="artista-todos" data-title="BRUNA KARLA - 2019 - Bruna Kids">
+                    <div class="img-texto">
+                        <img class="artista-imagem" src="capas/BRUNA KARLA - 2019 - Bruna Kids.webp"
+                            alt="Capas-oficial">
+                        <h2>Bruna Kids</h2>
+                    </div>
+                    <div class="texto-botao">
+                        <p>ano: 2019</p>
+                    </div><!-- texto-botao -->
+                    <div class="botaoDownload">
+                        <a href="https://encurtalink.online/BRUNA_KARLA_2019"
+                            target="_blank"><button>Download</button></a>
+                    </div>
+                </div><!-- artista-todos -->
+                <!-- ==================================== -->
+
             </div><!-- Container -->
-        </div><!-- recentes-grid -->
     </Section> <!-- todosArtistas -->
 
- 
 
-<footer>
-    <h1>Todos os direitos reservados <a href="https://www.instagram.com/visaodownloadoficial/" target="_blank">©
-            Visão Download 2023</a></h1>
-</footer>
+
+    <footer>
+        <h1>Todos os direitos reservados <a href="https://www.instagram.com/visaodownloadoficial/" target="_blank">©
+                Visão Download 2023</a></h1>
+    </footer>
 
     <script src="script.js"></script>
 </body>
