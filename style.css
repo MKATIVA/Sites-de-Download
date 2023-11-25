@@ -274,7 +274,8 @@ input::placeholder {
     color: #fff;
 }
 
-.teams .carousel .card {/* Distanciamento */
+.teams .carousel .card {
+    /* Distanciamento */
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -290,11 +291,11 @@ input::placeholder {
     transition: all 0.3s ease;
 }
 
-.teams .carousel .card .box h3 {
+.teams .carousel .card  h3 {
     position: absolute;
     color: #fff;
     background-color: var(--Cor-Laranja);
-    width: 98%;
+    width: 95%;
     bottom: 0;
     text-transform: uppercase;
     font-size: 13px;
@@ -303,7 +304,7 @@ input::placeholder {
 .teams .carousel {
     overflow: hidden;
     display: flex;
-    max-width: 95%;
+    max-width: 98%;
 }
 
 .teams .carousel .card:hover .box {
@@ -311,12 +312,15 @@ input::placeholder {
     filter: grayscale(90%);
 }
 
+.teams .carousel .card {
+    padding: 0 5px;
+}
+
 .teams .carousel .card img {
     height: 150px;
     width: 150px;
     object-fit: cover;
     transition: all 0.3s ease;
-    padding: 0 8px;
 }
 
 .teams .carousel .card:hover img {
@@ -786,7 +790,7 @@ footer a:hover {
         width: 100%;
     }
 
-    .teams {
+    /*     .teams {
         background-color: #23135d;
     }
 
@@ -807,7 +811,7 @@ footer a:hover {
         cursor: pointer;
         text-align: center;
     }
-
+ */
     #mensagem {
         height: 35vh;
     }
@@ -831,7 +835,7 @@ footer a:hover {
         font-size: 12px;
     }
 
-    .teams .carousel .card .box h3 {
+    /*     .teams .carousel .card .box h3 {
         position: absolute;
         color: #fff;
         background-color: var(--Cor-Laranja);
@@ -839,7 +843,7 @@ footer a:hover {
         bottom: 0;
         text-transform: uppercase;
         font-size: 13px;
-    }
+    } */
 
     .texto,
     .icone {
@@ -857,10 +861,10 @@ footer a:hover {
         padding: 5px 7px;
     }
 
-    .teams .carousel .card .box h3 {
+    /*     .teams .carousel .card .box h3 {
         width: 78%;
         padding: 0 1PX;
-    }
+    } */
 
     .icone {
         font-size: 25px;
