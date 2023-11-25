@@ -219,6 +219,17 @@ input::placeholder {
     position: relative;
 }
 
+.apresentacao .texto-de-anuncio {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    color: #39a3ff;
+    font-size: 12px;
+}
+.apresentacao .texto-de-anuncio span{
+    display: block;
+}
+
 .apresentacao::after {
     content: "";
     height: 60vh;
@@ -721,6 +732,26 @@ footer a:hover {
 
     100% {
         color: var(--Cor-Lilas-2);
+    }
+}
+
+#botaoAvancar {
+    content: "";
+    position: absolute;
+    animation: pulse-2 0.9s linear infinite;
+}
+
+@keyframes pulse-2 {
+    0% {
+        transform: scale(1.02);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        color: #fff;
     }
 }
 
