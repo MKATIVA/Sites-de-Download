@@ -400,6 +400,10 @@ input::placeholder {
     margin: 0 30px;
 }
 
+.artista-todos:hover button {
+    background-color: var(--Cor-Laranja);
+}
+
 #todosArtistas .container:hover> :not(:hover) {
     filter: saturate(10%);
 }
@@ -461,7 +465,6 @@ input::placeholder {
     width: 100%;
     transition: 0.4s;
 }
-
 
 .artista-todos img {
     width: 100%;
@@ -670,16 +673,33 @@ footer a:hover {
     align-items: center;
 }
 
-#botoes button {
+#botoes #botaoAvancar {
     margin: 5px;
     border: none;
-    padding: 5px 10px;
+    padding: 5px 50px;
     cursor: pointer;
     background-color: #FF6800;
     color: #fff;
     border-radius: 25px;
     transition: 0.5s;
+    position: relative;
 }
+
+#botaoAvancar i{
+    position: absolute;
+    font-size: 18px;
+    animation: pulse .9s linear infinite;
+    padding: 0 20px;
+}
+@keyframes pulse {
+    0%{
+        transform: scale(1.02);
+    }
+    100%{
+        color: var(--Cor-Lilas-2);
+    }
+}
+
 
 #botoes button:hover {
     background-color: var(--Cor-Lilas-2);
