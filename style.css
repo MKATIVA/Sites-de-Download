@@ -399,7 +399,8 @@ input::placeholder {
     text-align: center;
     margin: 0 30px;
 }
-#todosArtistas .container:hover > :not(:hover) {
+
+#todosArtistas .container:hover> :not(:hover) {
     filter: saturate(10%);
 }
 
@@ -757,7 +758,7 @@ footer a:hover {
         column-count: 2;
     }
 
-    .container {
+    #todosArtistas .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
