@@ -1,3 +1,5 @@
+/** @format */
+
 // Crie uma nova tag <link> para o novo ícone
 var newLink = document.createElement("link");
 newLink.rel = "icon";
@@ -8,6 +10,8 @@ newLink.href = "img/logo/Sem título-2.webp"; // Use o mesmo caminho do seu HTML
 document.head.appendChild(newLink);
 
 ///=================================================================
+
+
 
 // Botão ⬆️ de voltar
 
