@@ -11,8 +11,6 @@ document.head.appendChild(newLink);
 
 ///=================================================================
 
-
-
 // Botão ⬆️ de voltar
 
 let calcScrollValue = () => {
@@ -67,7 +65,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-///=================================================================
 
 //Pesquisa feita pelo Input
 
@@ -130,11 +127,10 @@ if (logoImage) {
   });
 }
 
-///======================== SEARCHBAR =====================================
 
 var searchbar = document.getElementById("searchbar");
-var prefix = "Digite Nome: ";
-var placeholderLines = ["ARTISTA", "BANDA", "ÁLBUM", "ESTILO"];
+var prefix = "Digite: ";
+var placeholderLines = ["ANO ou ÁLBUM"];
 var currentIndex = 0;
 var animationSpeed = 2500; // Ajuste a velocidade da animação em milissegundos
 
@@ -162,137 +158,3 @@ document.getElementById("downloadLink").addEventListener("click", function (e) {
   a.click();
   document.body.removeChild(a);
 });
-
-// slide
-
-$(document).ready(function () {
-  $(".carousel").slick({
-    slidesToShow: 8,
-    dots: false,
-    arrows: true,
-    swipeToSlide: true,
-    autoplay: true, // Adiciona a opção autoplay
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
-  });
-});
-
-//OPÇÃO DE AVANÇAR AS PÁGINA ENTRE OS CANTORES
-var letras = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  /*    "U", */
-  "V",
-  "W",
-  /*    "X",
-   "Y", */
-  "Z",
-];
-var indiceAtual = 0;
-var botaoVoltar = document.getElementById("botaoVoltar");
-var botaoAvancar = document.getElementById("botaoAvancar");
-
-function avançar() {
-  document.getElementById(letras[indiceAtual]).style.display = "none";
-  indiceAtual = (indiceAtual + 1) % letras.length;
-  document.getElementById(letras[indiceAtual]).style.display = "block";
-
-  // Garante que o botão Voltar esteja visível
-  botaoVoltar.style.display = "block";
-
-  // Verifica se a letra atual é a última (Z) e desativa o botão Avançar
-  if (indiceAtual === letras.length - 1) {
-    botaoAvancar.disabled = true;
-  } else {
-    botaoAvancar.disabled = false;
-  }
-}
-
-function voltar() {
-  document.getElementById(letras[indiceAtual]).style.display = "none";
-  indiceAtual = (indiceAtual - 1 + letras.length) % letras.length;
-  document.getElementById(letras[indiceAtual]).style.display = "block";
-
-  // Oculta o botão Voltar se atingir a primeira letra (A)
-  if (indiceAtual === 0) {
-    botaoVoltar.style.display = "none";
-  }
-
-  // Ativa o botão Avançar
-  botaoAvancar.disabled = false;
-}
-
-// Função para criar um cookie
-function criarCookie(nome, valor, dias) {
-  var dataExpiracao = new Date();
-  dataExpiracao.setDate(dataExpiracao.getDate() + dias);
-  var cookie =
-    nome +
-    "=" +
-    valor +
-    "; expires=" +
-    dataExpiracao.toUTCString() +
-    "; path=/";
-  document.cookie = cookie;
-}
-
-// Função para ler um cookie
-function lerCookie(nome) {
-  var nomeEQ = nome + "=";
-  var cookies = document.cookie.split(";");
-  for (var i = 0; i < cookies.length; i++) {
-    var cookie = cookies[i];
-    while (cookie.charAt(0) === " ") {
-      cookie = cookie.substring(1, cookie.length);
-    }
-    if (cookie.indexOf(nomeEQ) === 0) {
-      return cookie.substring(nomeEQ.length, cookie.length);
-    }
-  }
-  return null;
-}
-
-// Função para fechar a mensagem
-function fecharMensagem() {
-  document.getElementById("mensagem").style.display = "none";
-}
-
-// Verifica se a mensagem já foi exibida
-if (!lerCookie("mensagemExibida")) {
-  // Se não foi exibida, exibe a mensagem e marca como exibida
-  document.getElementById("mensagem").style.display = "block";
-  criarCookie("mensagemExibida", "true", 30); // O cookie expira em 30 dias
-}
-
-
