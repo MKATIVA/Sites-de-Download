@@ -293,12 +293,19 @@ if (!lerCookie("mensagemExibida")) {
   criarCookie("mensagemExibida", "true", 30); // O cookie expira em 30 dias
 }
 
-//Função chamada após o login bem-sucedido
+// Função chamada após o login bem-sucedido
 function onSignIn(googleUser) {
   // Informações do usuário
   var profile = googleUser.getBasicProfile();
-  console.log("ID: " + profile.getId());
-  console.log("Nome: " + profile.getName());
-  console.log("Email: " + profile.getEmail());
-  // Adicione o código para lidar com o login no seu site aqui
+
+  // Exibir informações do usuário
+  document.getElementById("user-id").innerText = profile.getId();
+  document.getElementById("user-name").innerText = profile.getName();
+  document.getElementById("user-email").innerText = profile.getEmail();
+
+  // Mostrar a seção de informações do usuário
+  document.getElementById("user-info").style.display = "block";
+
+  // Esconder o botão de login
+  document.querySelector(".g-signin2").style.display = "none";
 }
