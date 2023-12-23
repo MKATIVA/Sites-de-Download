@@ -11,8 +11,6 @@ document.head.appendChild(newLink);
 
 ///=================================================================
 
-
-
 // Botão ⬆️ de voltar
 
 let calcScrollValue = () => {
@@ -295,4 +293,12 @@ if (!lerCookie("mensagemExibida")) {
   criarCookie("mensagemExibida", "true", 30); // O cookie expira em 30 dias
 }
 
-
+//Função chamada após o login bem-sucedido
+function onSignIn(googleUser) {
+  // Informações do usuário
+  var profile = googleUser.getBasicProfile();
+  console.log("ID: " + profile.getId());
+  console.log("Nome: " + profile.getName());
+  console.log("Email: " + profile.getEmail());
+  // Adicione o código para lidar com o login no seu site aqui
+}
