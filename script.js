@@ -303,9 +303,9 @@ function onSignIn(googleUser) {
   document.getElementById("user-name").innerText = profile.getName();
   document.getElementById("user-email").innerText = profile.getEmail();
 
+  // Ocultar o botão de login
+  document.querySelector(".g-signin2").style.display = "none";
+
   // Mostrar a seção de informações do usuário
   document.getElementById("user-info").style.display = "block";
-
-  // Esconder o botão de login
-  document.querySelector(".g-signin2").style.display = "none";
 }
