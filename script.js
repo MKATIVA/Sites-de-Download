@@ -292,20 +292,3 @@ if (!lerCookie("mensagemExibida")) {
   document.getElementById("mensagem").style.display = "block";
   criarCookie("mensagemExibida", "true", 30); // O cookie expira em 30 dias
 }
-
-// Função chamada após o login bem-sucedido
-function onSignIn(googleUser) {
-  // Informações do usuário
-  var profile = googleUser.getBasicProfile();
-
-  // Exibir informações do usuário
-  document.getElementById("user-id").innerText = profile.getId();
-  document.getElementById("user-name").innerText = profile.getName();
-  document.getElementById("user-email").innerText = profile.getEmail();
-
-  // Ocultar o botão de login
-  document.querySelector(".g-signin2").style.display = "none";
-
-  // Mostrar a seção de informações do usuário
-  document.getElementById("user-info").style.display = "block";
-}
