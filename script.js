@@ -1,5 +1,7 @@
 /** @format */
 
+(adsbygoogle = window.adsbygoogle || []).push({});
+ 
 // Crie uma nova tag <link> para o novo ícone
 var newLink = document.createElement("link");
 newLink.rel = "icon";
